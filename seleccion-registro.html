@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-option {
+            cursor: pointer;
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .card-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-registro {
+            background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1><i class="fas fa-address-book me-2"></i> Sistema de Registro</h1>
+            <p class="lead">Selecciona el formato de registro</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="card card-option h-100" onclick="location.href='prototypeB.html'">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-rocket fa-3x mb-3 text-primary"></i>
+                        <h3>Registro Moderno</h3>
+                        <p class="text-muted">Formulario optimizado con validaciones intuitivas</p>
+                        <button class="btn btn-registro text-white mt-3">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+</html>
